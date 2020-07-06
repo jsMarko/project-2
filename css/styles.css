@@ -5,6 +5,7 @@
 }
 
 body {
+   min-width: 320px;
    background: #444;
    display: flex;
    align-items: center;
@@ -12,7 +13,8 @@ body {
 }
 
 .wrapper {
-   max-width: 1200px;
+   max-width: 1150px;
+
    width: 100%;
    background: #f9f9f9;
    height: 100vh;
@@ -53,32 +55,52 @@ body {
    border-bottom-color: #3782a0;
 }
 
-.profile-intro {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-}
+/* ********************************
+   MAIN CONTENT
+   ******************************** */
 
-.profile-container {
-   width: 175px;
-   height: 125px;
+.profile-intro {
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
    margin-top: 10px;
-   padding: 5px;
-   border: 2px solid red;
+   /* padding: 5px; */
+}
+
+.profile-img-container {
+   width: 60%;
+   height: auto;
+   padding: 20px;
+   background: #e9e9e9;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   /* border: 2px solid red; */
 }
 
 #profile-img {
    border-radius: 50%;
-   width: 85px;
+   width: 60%;
 }
 
-/* ********************************
-   MAIN CONTENT
-   ******************************** */
+.intro-para-container {
+   margin-top: 10px;
+   width: 90%;
+
+   height: auto;
+
+   /* padding: 10px; */
+   /* border: 2px solid red; */
+}
+
+.intro-para-container p {
+   text-align: justify;
+   /* width: 295px; */
+}
+
+/* **** intro ends here **** */
 
 .portfolio {
    background: #fff;
@@ -93,7 +115,17 @@ body {
    }
 }
 
+/* @media (min-width: 568px) {
+   .profile-img-container {
+      max-width: 320px;
+   }
+} */
+
 @media (min-width: 768px) {
+   .wrapper {
+      border: 2px solid red;
+   }
+
    .main-header {
       height: 200px;
    }
@@ -118,11 +150,28 @@ body {
    .name {
       font-size: 2rem;
    }
+
+   .profile-intro {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      padding: 0 40px;
+   }
+
+   .profile-img-container {
+      max-width: 360px;
+   }
+
+   .intro-para-container {
+      max-width: 355px;
+      align-self: flex-start;
+      margin-top: 0;
+      margin-right: 10px;
+   }
 }
 
 @media (min-width: 1024px) {
    .wrapper {
-      padding: 0 40px;
+      padding: 0 60px;
    }
 
    .main-header {
@@ -145,5 +194,29 @@ body {
       margin-right: auto;
       /* margin-left: 40px; */
       /* font-size: 2.4rem; */
+   }
+
+   .profile-intro {
+      padding: 0;
+      justify-content: space-between;
+   }
+
+   .profile-img-container {
+      max-width: 460px;
+      padding: 25px;
+      /* border: 1px solid red; */
+   }
+
+   .intro-para-container {
+      max-width: 460px;
+      align-self: flex-start;
+      margin-top: 0;
+
+      /* margin-right: 10px; */
+   }
+
+   .intro-para-container p {
+      font-size: 1.3rem;
+      margin-right: 10px;
    }
 }
