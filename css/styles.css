@@ -14,10 +14,9 @@ body {
 
 .wrapper {
    max-width: 1150px;
-
    width: 100%;
-   background: #f9f9f9;
    height: 100vh;
+   background: #f9f9f9;
 }
 
 .main-header {
@@ -69,7 +68,7 @@ body {
 }
 
 .profile-img-container {
-   width: 60%;
+   width: 70%;
    height: auto;
    padding: 20px;
    background: #e9e9e9;
@@ -86,24 +85,62 @@ body {
 }
 
 .intro-para-container {
-   margin-top: 10px;
+   margin-top: 25px;
    width: 90%;
-
    height: auto;
-
-   /* padding: 10px; */
-   /* border: 2px solid red; */
 }
 
 .intro-para-container p {
    text-align: justify;
-   /* width: 295px; */
 }
 
 /* **** intro ends here **** */
 
+/* ****************************************
+   PORTFOLIO SECTION 
+   ****************************************/
+
 .portfolio {
+   width: 100%;
    background: #fff;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   /* border: 2px solid red; */
+}
+
+.portfolio h3 {
+   text-align: center;
+   margin-top: 80px;
+   text-transform: uppercase;
+}
+
+.port-wrapper {
+   width: 100%;
+   height: auto;
+   display: flex;
+   justify-content: space-around;
+   /* flex-direction: column; */
+   flex-wrap: wrap;
+   border: 2px solid red;
+}
+
+.port-card-1 {
+   /* border: 2px solid red; */
+}
+
+.box {
+   /* Port-Cards 2nd class */
+   width: 90%;
+   margin-top: 45px;
+   border: 2px solid red;
+}
+
+.port-img {
+   width: 100%;
+   /* max-width: 47%; */
+   align-items: flex-start;
 }
 
 /* ********************************
@@ -167,6 +204,19 @@ body {
       margin-top: 0;
       margin-right: 10px;
    }
+
+   /* **********************************
+      PORTFOLIO SECTION --> @MEDIA 768px
+     ***********************************/
+
+   .port-wrapper {
+      /* flex-direction: row; */
+      flex-wrap: wrap;
+   }
+
+   .box {
+      width: 42%;
+   }
 }
 
 @media (min-width: 1024px) {
@@ -219,4 +269,8 @@ body {
       font-size: 1.3rem;
       margin-right: 10px;
    }
+
+   /* ********************************
+     PORTFOLIO SECTION
+     *********************************/
 }
