@@ -15,7 +15,6 @@ body {
 .wrapper {
    max-width: 1150px;
    width: 100%;
-   height: 100vh;
    background: #f9f9f9;
 }
 
@@ -64,7 +63,6 @@ body {
    align-items: center;
    justify-content: center;
    margin-top: 10px;
-   /* padding: 5px; */
 }
 
 .profile-img-container {
@@ -76,7 +74,6 @@ body {
    display: flex;
    justify-content: center;
    align-items: center;
-   /* border: 2px solid red; */
 }
 
 #profile-img {
@@ -107,7 +104,6 @@ body {
    display: flex;
    flex-direction: column;
    align-items: center;
-   /* border: 2px solid red; */
 }
 
 .portfolio h3 {
@@ -120,27 +116,43 @@ body {
    width: 100%;
    height: auto;
    display: flex;
-   justify-content: space-around;
-   /* flex-direction: column; */
+   justify-content: center;
    flex-wrap: wrap;
-   border: 2px solid red;
-}
-
-.port-card-1 {
-   /* border: 2px solid red; */
 }
 
 .box {
    /* Port-Cards 2nd class */
    width: 90%;
    margin-top: 45px;
-   border: 2px solid red;
 }
 
 .port-img {
    width: 100%;
-   /* max-width: 47%; */
    align-items: flex-start;
+}
+/* ************************** END PORTFOLIO SECTION ******/
+
+/* **************************
+   SKILLS SECTION
+   **************************/
+
+.card-titles {
+   text-align: center;
+   margin-top: 25px;
+}
+
+.card-para {
+   text-align: center;
+   margin-top: 15px;
+}
+
+.skills {
+   width: 100%;
+   background: #fff;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 /* ********************************
@@ -152,17 +164,7 @@ body {
    }
 }
 
-/* @media (min-width: 568px) {
-   .profile-img-container {
-      max-width: 320px;
-   }
-} */
-
 @media (min-width: 768px) {
-   .wrapper {
-      border: 2px solid red;
-   }
-
    .main-header {
       height: 200px;
    }
@@ -171,7 +173,6 @@ body {
       margin-top: 30px;
       flex-direction: row;
       justify-content: center;
-      /* border: 1px solid red; */
    }
 
    .nav a {
@@ -191,7 +192,7 @@ body {
    .profile-intro {
       flex-direction: row-reverse;
       justify-content: space-between;
-      padding: 0 40px;
+      padding: 0 30px;
    }
 
    .profile-img-container {
@@ -211,28 +212,28 @@ body {
 
    .port-wrapper {
       /* flex-direction: row; */
+      justify-content: space-between;
       flex-wrap: wrap;
+      padding: 30px;
    }
 
    .box {
-      width: 42%;
+      width: 49%;
    }
 }
 
 @media (min-width: 1024px) {
    .wrapper {
-      padding: 0 60px;
+      padding: 0 35px;
    }
 
    .main-header {
       flex-direction: row;
       padding-top: 0;
-      /* border: 2px solid red; */
    }
 
    .nav {
       align-self: center;
-      /* margin-right: 40px; */
    }
 
    .nav a {
@@ -254,15 +255,12 @@ body {
    .profile-img-container {
       max-width: 460px;
       padding: 25px;
-      /* border: 1px solid red; */
    }
 
    .intro-para-container {
       max-width: 460px;
       align-self: flex-start;
       margin-top: 0;
-
-      /* margin-right: 10px; */
    }
 
    .intro-para-container p {
@@ -273,4 +271,13 @@ body {
    /* ********************************
      PORTFOLIO SECTION
      *********************************/
+
+   .port-wrapper {
+      flex-wrap: wrap;
+      padding: 0;
+   }
+
+   .box {
+      width: 32%;
+   }
 }
