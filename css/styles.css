@@ -276,6 +276,11 @@ footer {
       font-size: 1.2rem;
       margin-right: 30px;
       border-bottom: transparent;
+      border: 1px solid #989898;
+   }
+
+   .nav a:hover {
+      background-color: #e3e3e3;
    }
 
    .nav a:nth-child(3) {
