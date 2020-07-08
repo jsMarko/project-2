@@ -4,21 +4,31 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Responsive Layout</title>
+      <link
+         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,500&display=swap"
+         rel="stylesheet"
+      />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+         rel="stylesheet"
+      />
+
       <link rel="stylesheet" href="css/styles.css" />
    </head>
    <body>
       <!-- ToDo Structure Layout also add google Font for intro -->
       <div class="wrapper">
-         <header class="main-header">
+         <header id="top" class="main-header">
             <h2 class="name">Mark Branscum</h2>
             <nav class="nav">
-               <a href="#">Home</a>
-               <a href="#">Portfolio</a>
-               <a href="#">Contact</a>
+               <a href="#top">Home</a>
+               <a href="#portfolio">Portfolio</a>
+               <a href="#skills">Skills</a>
+               <a href="#contact">Contact</a>
             </nav>
          </header>
          <main class="content-wrapper">
-            <section class="profile-intro">
+            <div class="profile-intro">
                <div class="profile-img-container">
                   <img
                      id="profile-img"
@@ -28,15 +38,16 @@
                </div>
                <div class="intro-para-container">
                   <p>
-                     I'm a Front End Developer that loves responsive design and
-                     especially css. Recently, I finished a degree in front end
-                     web development with TreeHouse. Ready to put that with
-                     other skills to good use!
+                     I'm a
+                     <span class="profile-span">Front End Developer</span> that
+                     loves responsive design and especially css. Recently, I
+                     finished a degree in front end web development with
+                     TreeHouse. Ready to put that with other skills to good use!
                   </p>
                </div>
-            </section>
+            </div>
 
-            <section class="portfolio">
+            <section id="portfolio" class="portfolio">
                <h3 class="portfolio-title">Portfolio</h3>
                <div class="port-wrapper">
                   <div class="port-card-1 box">
@@ -122,15 +133,71 @@
                   </div>
                </div>
             </section>
-            <section class="skills">
-               <!-- more content goes here -->
-               <h3 class="skills-title"></h3>
-               <div class="skills-wrapper"></div>
+            <section id="skills" class="skills">
+               <h3 class="skills-title">Skills Section</h3>
+               <div class="skills-wrapper">
+                  <div class="skills-container">
+                     <h4 class="skills-heading">Html</h4>
+
+                     <p>
+                        HyperText Markup Language, the foundation/structure the
+                        first of a long journey of learning. HTML, was my start
+                        and id nisi fugit modi totam necessitatibus, Expedita,
+                        temporibus a doloribus eveniet. Blanditiis id nisi.
+                     </p>
+                  </div>
+                  <div class="skills-container">
+                     <h4 class="skills-heading">Css</h4>
+
+                     <p>
+                        CSS in simple terms is what makes it all look good. CSS
+                        Cascading Style Sheets, the answer for design and is
+                        what makes being a developer so fun. Expedita,
+                        temporibus a doloribus eveniet. Blanditiis id nisi.
+                     </p>
+                  </div>
+                  <div class="skills-container">
+                     <h4 class="skills-heading">Javascript</h4>
+
+                     <p>
+                        Got my start in Visual Basic, so learning a new Language
+                        like Javascript has been rewarding. Simply stated, it is
+                        the behavior behind websites that creates a wonderful
+                        user experience.
+                     </p>
+                  </div>
+                  <div class="skills-container">
+                     <h4 class="skills-heading">React</h4>
+
+                     <p>
+                        Another journey which takes web development to a whole
+                        new level. dolor sit amet consectetur adipisicing elit.
+                        Blanditiis id nisi fugit modi totam necessitatibus, illo
+                        officiis cum. Expedita, Temporibus a doloribus!
+                     </p>
+                  </div>
+               </div>
             </section>
+            <section id="contact" class="contact">
+               <!-- ToDo Contact info goes here -->
+               <div class="contact-container">
+                  <h2 class="contact-heading">Contact</h2>
+                  <p class="contact-para">
+                     If you're interested in chatting or want more information
+                     about what I've been working on, I'd love to hear from you!
+                  </p>
+                  <h3 class="contact-phone">Phone 918-240-1778</h3>
+                  <a class="contact-email" href="mailto:someone@yoursite.com"
+                     >Email mbstudios@hotmail.com</a
+                  >
+               </div>
+            </section>
+            <footer>
+               <!-- ToDo footer info goes here -->
+               <h3 class="footer-name">Mark Branscum</h3>
+               <a href="#" id="bottom-anchor">Back to Top</a>
+            </footer>
          </main>
-         <footer>
-            <!-- contact info goes here -->
-         </footer>
       </div>
    </body>
 </html>
